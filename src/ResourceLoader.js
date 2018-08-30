@@ -135,11 +135,11 @@ export default class ResourceLoader {
                 img.onload = () => resolve(img);
                 //ios safari 10.3 taints canvas with data urls unless crossOrigin is set to anonymous
                 if (!supportsDataImages || useCORS) {
-                    img.crossOrigin = 'anonymous';
+                    img.crossOrigin = '';
                 }
 
                 img.onerror = reject;
-                img.src = src;
+                img.src = src+"?"+new Date().getTime();
                 if (img.complete === true) {
                     // Inline XML images may fail to parse, throwing an Error later on
                     setTimeout(() => {

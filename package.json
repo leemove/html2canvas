@@ -1,6 +1,6 @@
 {
-  "title": "html2canvas",
-  "name": "html2canvas",
+  "title": "html2canvas-leemove",
+  "name": "html2canvas-leemove",
   "description": "Screenshots with JavaScript",
   "main": "dist/npm/index.js",
   "module": "dist/html2canvas.js",
